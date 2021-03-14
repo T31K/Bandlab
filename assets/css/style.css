@@ -47,7 +47,7 @@ div.col-lg-4.col-md-6{
   color: #fff;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
-  border-radius: 2px;
+  border-radius: 50px;
   right: 15px;
   bottom: 15px;
   transition: background 0.5s;
@@ -66,13 +66,11 @@ div.col-lg-4.col-md-6{
 }
 
 .back-to-top:hover {
-  background: #03C4EB;
+  background: #F37920;
   color: #fff;
 }
 
-/*--------------------------------------------------------------
-# Welcome
---------------------------------------------------------------*/
+/* ====================== HERO ====================== */
 #hero {
   display: table;
   width: 100%;
@@ -161,7 +159,6 @@ div.col-lg-4.col-md-6{
     width: 100%;
     height: 50vh;
     background: url(../img/hero_mobile.png) top center;
-    /* background: url(../img/hero-bg.jpg) top center; */
     background-size: cover;
   }
   div.top-title h1{
@@ -180,21 +177,39 @@ div.col-lg-4.col-md-6{
   div#artist-display{
     display: none !important;
   }
+
+  div#artist-display-mobile{
+    display: block !important;
+  }
 }
 
 div#artist-display{
   display: block;
 }
 
+div#artist-display-mobile{
+  display: none;
+}
+
 div.slider-artist{
-  border: 2px solid brown;
-  height: 500px;
+  height: 450px;
+}
+
+img, div:focus, div:active{
+  outline: none;
+  border: none;
 }
 
 div.slider-artist div{
   width: 100%;
+  margin-right: 15px;
 }
 
+div.slider-artist div h3{
+  text-align: center;
+  margin-top: 15px;
+  color: #fff;
+}
 
 div#hero-text-mobile{
   display: none;
@@ -210,13 +225,12 @@ div#hero-text-mobile h6{
   text-align: center;
   color: #fff;
 }
+
 #hero .rotating > .animated {
   display: inline-block;
 }
 
 #hero .actions a {
-  font-family: "Raleway", sans-serif;
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
@@ -227,33 +241,7 @@ div#hero-text-mobile h6{
   margin: 10px;
 }
 
-#hero .btn-get-started {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
-  color: #fff;
-}
-
-#hero .btn-get-started:hover {
-  background: none;
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#hero .btn-services {
-  border: 2px solid #fff;
-  color: #fff;
-}
-
-#hero .btn-services:hover {
-  background: #03C4EB;
-  border: 2px solid #03C4EB;
-}
-
-/*--------------------------------------------------------------
-# Sections
---------------------------------------------------------------*/
-/* Sections Common
---------------------------------*/
+/* ====================== SECTION ====================== */
 section {
   overflow: hidden;
 }
@@ -280,8 +268,6 @@ section {
 }
 
 
-/* Services Section
---------------------------------*/
 #services {
   background: black;
   background-size: cover;
@@ -350,12 +336,6 @@ div.row.border-bottom div.ct h6{
   color: #E9955E;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 0;
-}
 
 div#artist{
   padding-left: 40px !important;
@@ -369,102 +349,4 @@ h3.artist_name{
   font-size: 20px;
 }
 
-.portfolio-details .portfolio-details-container {
-  position: relative;
-}
 
-.portfolio-details .portfolio-details-carousel {
-  position: relative;
-  z-index: 1;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-nav, .portfolio-details .portfolio-details-carousel .owl-dots {
-  margin-top: 5px;
-  text-align: left;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot {
-  display: inline-block;
-  margin: 0 10px 0 0;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.portfolio-details .portfolio-details-carousel .owl-dot.active {
-  background-color: #03C4EB !important;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  position: absolute;
-  right: 0;
-  bottom: -70px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  z-index: 2;
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li + li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 50px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  width: 50%;
-  font-size: 26px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
-
-@media (max-width: 768px) {
-  .portfolio-details .portfolio-description h2 {
-    width: 100%;
-  }
-  .portfolio-details .portfolio-info {
-    position: static;
-    margin-top: 30px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  background: #111;
-  padding: 30px 0;
-  color: #fff;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 10px;
-  text-align: center;
-  font-size: 13px;
-  color: #ccc;
-}

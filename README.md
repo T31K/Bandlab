@@ -8,3 +8,7 @@ I chose to use plain HTML/CSS/JavaScript because of simplicity, lightweight-ness
 - [x] Icofont
 - [x] Fontawesome
 - [x] Slickjs
+- [x] Adobe Photoshop
+
+## Github Pages Demo
+- https://t31k.github.io/Bandlab/
